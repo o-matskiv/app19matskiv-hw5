@@ -24,21 +24,21 @@ public class AsIntStreamTest{
     }
 
     @Test
-    public void max() {
+    public void testMax() {
         double expected = 4;
         double actual = IntStream.max();
         assertEquals(expected, actual, 0.0);
     }
 
     @Test
-    public void min() {
+    public void testMin() {
         double expected = 0;
         double actual = IntStream.min();
         assertEquals(expected, actual, 0.0);
     }
 
     @Test
-    public void count() {
+    public void testCount() {
         double expected = 5;
         double actual = IntStream.count();
         assertEquals(expected, actual, 0.0);
@@ -48,7 +48,7 @@ public class AsIntStreamTest{
     }
 
     @Test
-    public void sum() {
+    public void testSum() {
         double expected = 10;
         double actual = IntStream.sum();
         assertEquals(expected, actual, 0.0);
@@ -59,7 +59,7 @@ public class AsIntStreamTest{
 
 
     @Test
-    public void forEach() {
+    public void testForEach() {
         String expected = "01234";
         String actual = StreamApp.streamForEach(IntStream);
         assertEquals(expected, actual);
@@ -69,7 +69,7 @@ public class AsIntStreamTest{
     }
 
     @Test
-    public void toArray() {
+    public void testToArray() {
         int[] expected = {0, 1, 2, 3,4};
         int[] actual = StreamApp.streamToArray(IntStream);
         assertArrayEquals(expected, actual);
